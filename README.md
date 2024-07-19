@@ -21,7 +21,7 @@ Requirements: Ensure that Python 3, NumPy, OpenCV, and Mediapipe are installed o
 
 Requirements: python3 , numpy , opencv, mediapipe.
 
-<img src="https://github.com/Lahari25/AirSketch/blob/main/Screenshot%20Airsketch.png" width="650" height="300">
+<img src="https://github.com/Lahari25/AirSketch/blob/main/Screenshot%20Airsketch.png" width="500" height="300">
 
 
 
