@@ -2,25 +2,26 @@
 A Computer vision project implemented using OpenCV and Mediapipe
 
 
-Ever wanted to draw your imagination by just waiving your finger in air. 
-We will be using the computer vision techniques of OpenCV to build this project. The preffered language is python due to its exhaustive libraries and easy to use syntax but understanding the basics it can be implemented in any OpenCV supported language.
+Ever wanted to bring your imagination to life by simply waving your finger in the air?
 
-Here Hand landmarks detection and tracking is used in order to achieve the objective. <br><br>
+In this project, we'll leverage computer vision techniques using OpenCV to create an interactive drawing application. While Python is preferred for its extensive libraries and straightforward syntax, one can implement this project in any language supported by OpenCV.
+
+Our approach involves detecting and tracking hand landmarks to achieve the desired functionality.
+
+#Algorithm
+Capture Frames: Start by reading video frames and convert them to the HSV color space for easier color detection.
+Prepare the Canvas: Set up the canvas frame and place the appropriate ink buttons on it.
+Configure Mediapipe: Adjust the Mediapipe initialization to detect only one hand.
+Landmark Detection: Pass the RGB frames to the Mediapipe hand detector to identify hand landmarks.
+Track Coordinates: Record the coordinates of the forefinger and store them in an array for use in subsequent frames (these points will be used for drawing on the canvas).
+Draw on Canvas: Render the stored points on both the frames and the canvas.
+Requirements: Ensure that Python 3, NumPy, OpenCV, and Mediapipe are installed on your system.
 
 
 
-# Algorithm
+Requirements: python3 , numpy , opencv, mediapipe.
 
-1. Start reading the frames and convert the captured frames to HSV colour space.(Easy for colour detection)
-2. Prepare the canvas frame and put the respective ink buttons on it.
-3. Adjust the values of teh mediapipe intilization to detect one hand only.
-4. Detect teh landmarks by passing the RGB frame to the mediapipe hand detector
-5. Detect the landmarks, find the forefinger coordinates and keep storing them in the array for successive frames .(Arrays for drawing points on canvas)
-6. Finally draw the points stored in array on the frames and canvas .
-
-Requirements: python3 , numpy , opencv, mediapipe installed on your system.
-
-<img src="https://github.com/Lahari25/AirSketch/blob/main/Screenshot%20Airsketch.png" width="950" height="400">
+<img src="https://github.com/Lahari25/AirSketch/blob/main/Screenshot%20Airsketch.png" width="750" height="400">
 
 
 
