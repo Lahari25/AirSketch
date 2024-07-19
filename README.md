@@ -8,13 +8,15 @@ In this project, we'll leverage computer vision techniques using OpenCV to creat
 
 Our approach involves detecting and tracking hand landmarks to achieve the desired functionality.
 
-#Algorithm
-Capture Frames: Start by reading video frames and convert them to the HSV color space for easier color detection.
-Prepare the Canvas: Set up the canvas frame and place the appropriate ink buttons on it.
-Configure Mediapipe: Adjust the Mediapipe initialization to detect only one hand.
-Landmark Detection: Pass the RGB frames to the Mediapipe hand detector to identify hand landmarks.
-Track Coordinates: Record the coordinates of the forefinger and store them in an array for use in subsequent frames (these points will be used for drawing on the canvas).
-Draw on Canvas: Render the stored points on both the frames and the canvas.
+Algorithm
+
+1. Capture Frames: Start by reading video frames and convert them to the HSV color space for easier color detection.
+2. Prepare the Canvas: Set up the canvas frame and place the appropriate ink buttons on it.
+3. Configure Mediapipe: Adjust the Mediapipe initialization to detect only one hand.
+4. Landmark Detection: Pass the RGB frames to the Mediapipe hand detector to identify hand landmarks.
+5. Track Coordinates: Record the coordinates of the forefinger and store them in an array for use in subsequent frames (these points will be used for drawing on the canvas).
+6. Draw on Canvas: Render the stored points on both the frames and the canvas.
+   <br>
 Requirements: Ensure that Python 3, NumPy, OpenCV, and Mediapipe are installed on your system.
 
 
